@@ -1,0 +1,3 @@
+n = int(input())
+
+print(" ".join(["GFG"] * n))
