@@ -1,0 +1,16 @@
+def maxSum(nums, k):
+    window = 0
+    maximum = 0
+
+    for i in range(k):
+        window += nums[i]
+
+    maximum = window
+
+    for i in range(k, len(nums)):
+        window += nums[i]
+        window -= nums[i-k]
+
+        maximum = max(maximum, window)
+
+    return maximum
