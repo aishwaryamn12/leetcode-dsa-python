@@ -1,0 +1,4 @@
+s=input("enter the string:")
+n=len(s)
+count=n*(n+1)/2
+print("no_of_substring:",count)
