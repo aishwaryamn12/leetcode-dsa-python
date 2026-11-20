@@ -1,0 +1,16 @@
+queue = []
+
+# Enqueue (Insert)
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+print("Queue:", queue)
+
+# Dequeue (Delete)
+queue.pop(0)
+
+print("After deletion:", queue)
+
+# Front element
+print("Front:", queue[0])
